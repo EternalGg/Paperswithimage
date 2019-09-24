@@ -1,0 +1,59 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: "Roboto Light";
+    height: 100%;
+}
+
+.bridges{
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.top{
+    height: 13%;
+}
+
+.mid{
+    height: 100%;
+}
+
+.mid_left{
+    width: 13%;
+    height: 100%;
+    background: black;
+    left: 2.5%;
+    position: absolute;
+}
+
+.mid_right{
+    width: 13%;
+    height: 100%;
+    background: blue;
+    position: absolute;
+    right: 2.5%;
+}
+
+.mid_center{
+    width: 65%;
+    background: darkred;
+    position: absolute;
+    top: 15%;
+    left: 17.5%;
+    height: 100%;
+}
+
+.logo{
+    height: 100%;
+    width: 10%;
+}
+
+.search_box{
+
+}
+
+.about{
+    font-family: "Roboto Light";
+}

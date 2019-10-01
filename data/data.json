@@ -1,0 +1,11 @@
+{
+  "paper": [
+    { "id":"Bill" , "lastName":"Gates" },
+    { "id":"George" , "lastName":"Bush" },
+    { "id":"Thomas" , "lastName":"Carter" }
+  ],
+  "comptition": [
+
+  ]
+
+}

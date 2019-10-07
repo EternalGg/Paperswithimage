@@ -5,26 +5,82 @@
     <title>Paperswithpapers</title>
     <link rel="stylesheet" href="css/common.css">
     <script src="js/common.js"></script>
+    <script src="js/rank.js"></script>
 </head>
 <body>
 <div class="bridges">
     <a href="index.html"> <img class="logo" src="image/logo100.png" alt="main"></a>
     <ul class="top_left">
-        <a href="report.html" class="report">report</a>
-        <a href="comptition.html" class="comptition">machine-learning-comptition </a>
+        <a id="report" href="#" onclick="report()" class="report">举报错误/Report</a>
     </ul>
     <div class="top_right">
-        <a class="about" href="about.html"><img src="image/abot.png"> About Us</a>
-        <a href="https://www.twitter.com" target="_blank"><img src="image/twwtter.png"> twitter</a>
-        <a href="login.html"><img src="image/logi.png" alt="login"> Log In/Register</a>
+        <a class="about" href="https://github.com/EternalGg"><img src="image/abot.png"> 关于我们</a>
+        <a href="https://www.twitter.com" target="_blank"><img src="image/twwtter.png"> Twitter</a>
+        <a id="login" href="#" onclick="log()"><img src="image/logi.png" alt="login"> 登录</a>
+    </div>
+    <div class="state">
+        <div id="state" class="now_state">
+            所有
+        </div>
+        <ul class="choice">
+            <a id="trend" onclick="changetype('趋势','trend')" href = "#">趋势</a>
+            <a id="new" onclick="changetype('最新','new')" href = "#">最新</a>
+            <a id="porp" onclick="changetype('最受欢迎','porp')" href = "#">最受欢迎</a>
+        </ul>
     </div>
     <div class="mid">
         <div class="mid_left">
-
+            <div class="direction">
+                <a id="fcv" onclick="showkid('fcv')" href = "#">计算机视觉</a>
+                <a id="fnlp" onclick="showkid('fnlp')" href = "#">自然语言处理</a>
+                <a id="frl" onclick="showkid('frl')" href = "#">强化学习</a>
+                <a id="fMedical" onclick="showkid('fMedical')" href = "#">医疗</a>
+                <a id="frobot" onclick="showkid('frobot')" href = "#">机器人</a>
+            </div>
         </div>
-        <div class="mid_right"></div>
-        <div class="mid_center"></div>
+        <div class="mid_right">
+            <ul id="CV">
+                <a href = "#">语义分割</a>
+                <a href = "#">影像分类</a>
+                <a href = "#">物体检测</a>
+                <a href = "#">影像产生</a>
+                <a href = "#">姿势估计</a>
+            </ul>
+            <ul id="NLP">
+                <a href = "#">机器翻译</a>
+                <a href = "#">语言建模</a>
+                <a href = "#">问题回答</a>
+                <a href = "#">情绪分析</a>
+                <a href = "#">文字分类</a>
+            </ul>
+            <ul id="RL">
+                <a href = "#">星际争霸</a>
+                <a href = "#">即使策略游戏</a>
+                <a href = "#">对抗攻击</a>
+                <a href = "#">对抗防御</a>
+                <a href = "#">推理攻击</a>
+            </ul>
+            <ul id="Medical">
+                <a href = "#">医学图像分割</a>
+                <a href = "#">病变分割</a>
+                <a href = "#">药物发现</a>
+                <a href = "#">脑分割</a>
+                <a href = "#">脑肿瘤分割</a>
+            </ul>
+            <ul id="robot">
+                <a href = "#">校准</a>
+                <a href = "#">视觉里程表</a>
+                <a href = "#">运动计划</a>
+                <a href = "#">机器人导航</a>
+                <a href = "#">视觉导航</a>
+            </ul>
+        </div>
+        <div id="mid_center" class="mid_center">
+        </div>
     </div>
 </div>
+<script language="JavaScript">
+    row = creat_row();
+</script>
 </body>
 </html>

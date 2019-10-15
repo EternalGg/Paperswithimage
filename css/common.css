@@ -186,6 +186,7 @@ div{
 }
 
 .task{
+    width: 40%;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -193,15 +194,15 @@ div{
     border-radius:5px 20px 20px 20px;
     overflow: hidden;
     border: #BCB9B9 0.5px solid;
-    margin:4px 4px 20px 4px
-    /*padding-left: 0px;*/
+    margin:4px 4px 20px 4px;
+    font-size: 14px;
 }
 
 .row_performance{
     position: absolute;
     left: 85%;
     height: 280px;
-    width: 10%;
+    width: 13%;
     margin:0;
     padding:0;
 }
@@ -218,35 +219,42 @@ div{
     color: white;
     font-size: 17px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius:20px 20px 20px 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius:13px 13px 13px 13px;
     overflow: hidden;
-    border: #BCB9B9 0.5px solid;
+    border: rgb(210,210,210) 3px solid;
     margin:4px 4px 20px 4px
 }
 .paper{
+    height: 50px;
     background: #1ab37c;
     color: white;
     font-size: 17px;
     text-align: center;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius:20px 20px 20px 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius:13px 13px 13px 13px;
     overflow: hidden;
-    border: #BCB9B9 0.5px solid;
+    border: rgb(236,216,192) 3px solid;
     margin:4px 4px 20px 4px
 }
 .pdiv{
+    height: 30px;
+
+    width: 100px;
     position: absolute;
     top: 100px;
 }
 .gdiv{
+
+    height: 30px;
+    width: 100px;
     position: absolute;
     top: 170px;
 }
@@ -296,3 +304,5 @@ div{
     display: block;
     left: 30%;
 }
+
+

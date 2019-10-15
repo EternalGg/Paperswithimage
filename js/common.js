@@ -18,7 +18,8 @@ function creat_row() {
             '</ul>' +
             '<ul class="row_detail">'+
             '<ul>'+
-            '<a class="title">'+xmlDoc.getElementById(i).getElementsByTagName('name')[0].childNodes[0].nodeValue+'</a>'+
+            '<a href=paper.html' +'?'+i+
+            ' class="title">'+xmlDoc.getElementById(i).getElementsByTagName('name')[0].childNodes[0].nodeValue+'</a>'+
             '<div class="complexity">'+xmlDoc.getElementById(i).getElementsByTagName('time')[0].childNodes[0].nodeValue+'</div>'+
             '<div class="detail">' +xmlDoc.getElementById(i).getElementsByTagName('detail')[0].childNodes[0].nodeValue+
             '</div>' +
@@ -139,4 +140,21 @@ function report() {
     if (value!==null){
         alert('tank u')
     }
+}
+
+function predicttype()
+{
+    console.log(window.location.search);
+   if (window.location.search=="?0")
+    {
+        document.getElementById('login').style.display='none';
+    }
+}
+
+function predictloging() {
+    document.getElementsByClassName('title').addEventListener('click',function(){
+        if(window.location.search!="?0"){
+            console.log(alert('请先登录'));
+        }
+    })
 }

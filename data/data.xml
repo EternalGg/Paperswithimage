@@ -14,6 +14,7 @@
         <type>NLP</type>
         <task1>CODE SEARCH</task1>
         <task2>INFORMATION RETRIEVAL</task2>
+        <tip>30</tip>
     </data>
     <data id="2">
         <image>TensorFlow.png</image>
@@ -39,6 +40,7 @@
         <type>ML</type>
         <task1>DIMENSIONALITY REDUCTION</task1>
         <task2>Machineleaning</task2>
+        <tip>31</tip>
     </data>
     <data id="3">
         <image>Logo_main_black.png</image>
@@ -57,6 +59,7 @@
         <type>CV</type>
         <task1>MULTI-TASK LEARNING</task1>
         <task2>POSE ESTIMATION</task2>
+        <tip>31</tip>
     </data>
     <data id="4">
         <image>68747470733a2f2f7472616e73666f726d65722e68756767696e67666163652e636f2f66726f6e742f6173736574732f7468756d626e61696c2d6c617267652e706e67.png</image>
@@ -73,6 +76,7 @@
         <type>NLP</type>
         <task1>NLP</task1>
         <task2>LANGUAGE MODELLING</task2>
+        <tip>32</tip>
     </data>
     <data id="5">
         <image>TensorFlow.png</image>
@@ -94,6 +98,7 @@
         <type>ML</type>
         <task1>DIMENSIONALITY REDUCTION</task1>
         <task2>MODEL SELECTION</task2>
+        <tip>33</tip>
     </data>
     <data id="6">
         <image>33823288584_1d21cf0a26_k_example_output.jpg</image>
@@ -110,6 +115,7 @@
         <type>CV</type>
         <task1>OBJECT DETECTION</task1>
         <task2>VIDEO CLASSIFICATION</task2>
+        <tip>30</tip>
     </data>
     <data id="7">
         <image></image>
@@ -123,5 +129,6 @@
         <type>CV</type>
         <task1>INSTANCE SEGMENTATION</task1>
         <task2>OBJECT DETECTION</task2>
+        <tip>34</tip>
     </data>
 </root>

@@ -8,7 +8,7 @@ function rank() {
     xmlhttp.open("GET", "data/data.xml", false);
     xmlhttp.send();
     xmlDoc = xmlhttp.responseXML;
-    console.log(xmlDoc.getElementById(1).getElementsByTagName('image')[0].childNodes[0].nodeValue)
+    sort('tip')
 }
 
 function sort(type) {
@@ -30,7 +30,6 @@ function sort(type) {
             arr[i][j] = xmlDoc.getElementsByTagName(type)[i].childNodes[0].nodeValue;
         }
     }
-    console.log(arr);
 
 }
 

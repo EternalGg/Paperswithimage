@@ -29,13 +29,13 @@
           <div class="username">
               <label class="supp" placeholder="用户名/邮箱/手机号"> username</label>
               <br><br>
-              <input id="username" type="text">
+              <input type="text" id="username" name="username" placeholder="请输入账号"/>
           </div>
             <br>
             <div class="password">
-                <label class="supp" placeholder="密码"> password</label>
+                <label name="password" οnblur="validate_password(this.value)"  class="supp" placeholder="密码" > password</label>
                 <br><br>
-                <input id="password" type="text">
+                <input type="password" id="password" name="password" placeholder="请输入六位密码"/>
             </div>
             <br><br>
 

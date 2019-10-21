@@ -1,4 +1,5 @@
 function creat_row() {
+    type = window.location.search;
     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
         xmlhttp = new XMLHttpRequest();
     } else {// code for IE6, IE5
@@ -18,7 +19,7 @@ function creat_row() {
             '</ul>' +
             '<ul class="row_detail">'+
             '<ul>'+
-            '<a href=paper.html' +'?'+i+
+            '<a href=paper.html'+type +'?'+i+
             ' class="title">'+xmlDoc.getElementById(i).getElementsByTagName('name')[0].childNodes[0].nodeValue+'</a>'+
             '<div class="complexity">'+xmlDoc.getElementById(i).getElementsByTagName('time')[0].childNodes[0].nodeValue+'</div>'+
             '<div class="detail">' +xmlDoc.getElementById(i).getElementsByTagName('detail')[0].childNodes[0].nodeValue+
@@ -144,17 +145,17 @@ function report() {
 
 function predicttype()
 {
-    console.log(window.location.search);
    if (window.location.search=="?0")
     {
         document.getElementById('login').style.display='none';
     }
 }
 
-function predictloging() {
-    document.getElementsByClassName('title').addEventListener('click',function(){
-        if(window.location.search!="?0"){
-            console.log(alert('请先登录'));
-        }
-    })
+function paperpredict() {
+    first = window.location.search.split("?");
+    if (first[1]=="0")
+    {
+        document.getElementById('login').style.display='none';
+    }
 }
+

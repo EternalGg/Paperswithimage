@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>register</title>
     <link rel="stylesheet" href="css/common.css">
     <script src="js/common.js"></script>
     <script src="js/rank.js"></script>
@@ -10,6 +10,9 @@
     <script src="js/login.js"></script>
 </head>
 <body>
+<script type="javascript">
+
+</script>
 <div class="bridges">
     <a href="index.html"> <img class="logo" src="image/logo100.png" alt="main"></a>
     <ul class="top_left">
@@ -21,7 +24,7 @@
     </div>
     <div id="login">
         <div class="title">
-            <h2>登录</h2>
+            <h2>注册</h2>
             <br>
         </div>
         <hr>
@@ -29,17 +32,22 @@
             <div class="username">
                 <label class="supp" placeholder="用户名/邮箱/手机号"> username</label>
                 <br><br>
-                <input id="username" type="text">
+                <input type="text" id="username" name="username" placeholder="只能用邮箱注册"/>
             </div>
             <br>
             <div class="password">
                 <label class="supp" placeholder="密码"> password</label>
                 <br><br>
-                <input id="password" type="text">
+                <input type="password" id="password" name="password" placeholder="6位密码由数字和字母组成"/>
+            </div>
+            <br>
+            <div class="d_password">
+                <label class="supp" placeholder="密码"> check password</label>
+                <br><br>
+                <input type="password" id="second_password" name="password" placeholder="再输入一次您的密码"/>
             </div>
             <br><br>
-
-            <div onclick="register(document.getElementById('username').value,document.getElementById('password').value)" class="button _1">
+            <div onclick="register()" class="button _1">
                 <span>注册并登陆</span>
                 <div class="back"></div>
             </div>
@@ -48,5 +56,6 @@
         </form>
     </div>
 </div>
+
 </body>
 </html>

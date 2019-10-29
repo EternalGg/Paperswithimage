@@ -5,7 +5,7 @@ function creat_row() {
     } else {// code for IE6, IE5
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xmlhttp.open("GET", "data/data.xml", false);
+    xmlhttp.open("GET", "../data/data.xml", false);
     xmlhttp.send();
     xmlDoc = xmlhttp.responseXML;
     lenth = xmlDoc.getElementsByTagName('name').length;
@@ -14,7 +14,7 @@ function creat_row() {
         newDiv.className="row";
         newDiv.innerHTML = '<ul class="row_img">'+
             '<div class="p_div">'+
-            '<img class="picture" src="data/'+xmlDoc.getElementById(i).getElementsByTagName('image')[0].childNodes[0].nodeValue+'">'+
+            '<img class="picture" src="../data/'+xmlDoc.getElementById(i).getElementsByTagName('image')[0].childNodes[0].nodeValue+'">'+
             '</div>'+
             '</ul>' +
             '<ul class="row_detail">'+

@@ -5,7 +5,7 @@ function rank() {
         76444
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xmlhttp.open("GET", "data/data.xml", false);
+    xmlhttp.open("GET", "../data/data.xml", false);
     xmlhttp.send();
     xmlDoc = xmlhttp.responseXML;
     sort('tip')
@@ -17,7 +17,7 @@ function sort(type) {
     } else {
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xmlhttp.open("GET", "data/data.xml", false);
+    xmlhttp.open("GET", "../data/data.xml", false);
     xmlhttp.send();
     xmlDoc = xmlhttp.responseXML;
     lenth = xmlDoc.getElementsByTagName('name').length;

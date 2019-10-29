@@ -38,7 +38,7 @@ input{  outline-style: none ;
 
 .button {
     position: relative;
-    /*width: 100px;*/
+    /*width: 70%;*/
     height: calc(0.7 * var(--height));
     display: flex;
     justify-content: center;
@@ -107,5 +107,9 @@ input{  outline-style: none ;
     }
 }
 
-
+span{
+    position: center;
+    left: 90%;
+    font-size: 12px;
+}
 

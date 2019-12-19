@@ -1,25 +1,12 @@
 function login(account,password){
-    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-        xmlhttp = new XMLHttpRequest();
-    } else {// code for IE6, IE5
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.open("GET", "../data/account.xml", false);
-    xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
-    length = xmlDoc.getElementsByTagName('password').length;
     if (account == "" && password ==""){
-        console.log('账号或密码为空')
+		alert('账号密码为空')
     }else {
-        for (var i = 1;i<length+1;i++) {
-            passdata = xmlDoc.getElementById(i).getElementsByTagName('password')[0].childNodes[0].nodeValue;
-            undata = xmlDoc.getElementById(i).getElementsByTagName('username')[0].childNodes[0].nodeValue;
-            if (account == undata && password == undata) {
-                window.location.href = 'index.html' + '?0';
+            if (account == "xiyasi" && password == "xiyasi") {
+                window.location.href = 'index.html';
             }else {
                 alert("账号密码错误");
             }
-        }
     }
 }
 
@@ -33,7 +20,7 @@ function register(){
     if(username != "" && emailReg.test(username)){
         if(password !="" && passwordReg.test(password)){
             if(second_password==password){
-                window.location.href='index.html'+'?0';
+                window.location.href='index.html';
             }else{
                 alert("密码不一致，提交失败，请重新填写！");
                 return false;

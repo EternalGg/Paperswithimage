@@ -1,15 +1,3 @@
-function rank() {
-    if (window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest();
-    } else {
-        76444
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.open("GET", "../data/data.xml", false);
-    xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
-    sort('tip')
-}
 
 function sort(type) {
     if (window.XMLHttpRequest) {

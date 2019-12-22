@@ -1,3 +1,64 @@
 h2{
-    font-weight: lighter;
+	font-size:  lighter;
+}
+
+.taskindex{
+	display: inline;
+	text-align: center;
+	line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius:5px 5px 5px 5px;
+    overflow: hidden;
+    border: #BCB9B9 0.5px solid;
+    margin:4px 4px 50px 4px;
+    font-size: 14px;
+}
+
+.perfomance{
+	position: absolute;
+	height: 280px;
+	width: 13%;
+	margin:0;
+	padding:0;
+}
+
+.right{
+	/* background: #1F6BCD; */
+	width: 40%;
+	/* height: 100%; */
+	left: 60%;
+	position: absolute;
+}
+.left{
+	/* background: #000000; */
+	width: 60%;
+	/* height: 100%; */
+	/* left: %; */
+	position: absolute;
+}
+
+table.hovertable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hovertable th {
+	background-color:rgb(252,240,200);
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+table.hovertable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
 }

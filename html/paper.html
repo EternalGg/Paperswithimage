@@ -1,45 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Details</title>
-    <script src="../js/common.js"></script>
-    <link rel="stylesheet" href="../css/common.css">
-    <script src="../js/paper.js"></script>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Details</title>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/common.css">
+		<script src="../js/paper.js"></script>
+		<link rel="stylesheet" href="../css/paper.css">
+	</head>
+	<body>
 
-<div class="bridges">
-    <a href="index.html"> <img class="logo" src="../image/logo100.png" alt="main"></a>
-    <ul class="top_left">
-        <a id="report" href="#" onclick="report()" class="report">举报错误/Report</a>
-    </ul>
-    <div class="top_right">
-        <a class="about" href="https://github.com/EternalGg"><img src="../image/abot.png"> 关于我们</a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../image/twwtter.png"> Twitter</a>
-    </div>
-    <div>
-    <div class="mid_center">
-        <div class="title">
-            <h2 id="ptitle">标题</h2>
-            <div style="font-size: 14px" id="ptime"></div>
-        </div>
-        <div id="panother" style="font-size: 17px">内容</div>
-        <div class="image"></div>
+		<div class="bridges">
+			<a href="index.html"> <img class="logo" src="../image/logo100.png" alt="main"></a>
+			<ul class="top_left">
+				<a id="report" href="#" onclick="report()" class="report">举报错误/Report</a>
+			</ul>
+			<div class="top_right">
+				<a class="about" href="https://github.com/EternalGg"><img src="../image/abot.png"> 关于我们</a>
+				<a href="https://www.twitter.com" target="_blank"><img src="../image/twwtter.png"> Twitter</a>
+			</div>
+			<div>
+				<div class="mid_center">
+					<div class="title">
+						<h2 id="ptitle">标题</h2>
+						<div style="font-size: 14px" id="ptime"></div>
+					</div>
+					<div>
+						<h3>Detail</h3>
+						<div id="pdetail" style="font-size: 20px">内容</div>
+						<br>
+					</div>
+					<div>
+						<div class="left">
+							<h3>Evaluation Results</h3>
+							<table class="hovertable">
+								<tr>
+									<th>TASK</th>
+									<th>DATASET</th>
+									<th>MODEL</th>
+									<th>METRIC NAME</th>
+									<th> METRIC VALUE</th>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2007</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>73.2%</td>
+								</tr>
+								<tr>
+									<td>Real-Time Object Detection</td>
+									<td>PASCAL VOC 2008</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>73.2%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2009</td>
+									<td>Faster R-CNN</td>
+									<td>FPS</td>
+									<td>86.9%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2010</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>73.2%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2011</td>
+									<td>Faster R-CNN</td>
+									<td>FPS</td>
+									<td>73.2%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2012</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>12.5%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2013</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>78.9%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2014</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>73.1%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2015</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>63.2%</td>
+								</tr>
+								<tr>
+									<td>Object Detection</td>
+									<td>PASCAL VOC 2016</td>
+									<td>Faster R-CNN</td>
+									<td>MAP</td>
+									<td>22.2%</td>
+								</tr>
+							</table>
+						</div>
+						<div class="right">
+							<div class="right_top">
+								<h3>Task</h3>
+								<a id="task1" class="taskindex"></a>
+								<a id="task2" class="taskindex"></a>
+							</div>
+							<div class="right_bot">
+								<ul class="perfomance">
+									<div class="gdiv"><a id="git" class="github" href="">code</a></div>
+									<div class="pdiv"><a id="p_link" class="paper" href="">paper</a></div>
+								</ul>
+								<h3>Link</h3>
+							</div>
+						</div>
 
-        <div id="box" class="box">
-            </ul> 
-            <ol>
-            </ol>
-            <div id="div_btn">
-                
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
-<script language="JavaScript">
-    showdetail();
-</script>
-</body>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script language="JavaScript">
+			showdetail();
+		</script>
+	</body>
 </html>
